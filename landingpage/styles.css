@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+nav {
+    background-color: #43315C  ;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #f39c12;
+}
+.hero {
+    background-image: url('wall.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+.cta-button {
+    background-color: #f39c12;
+    border: none;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #e67e22;
+}
+.features, .popular-games {
+   background-image: url('wall.jpg');
+  color:#EFE7FA ;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+.features h2, .popular-games h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.feature, .game {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
+    text-align: center;
+}
+.feature img, .game img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.feature img:hover, .game img:hover {
+    transform: scale(1.05);
+}
+footer {
+    background-color: #734473 ;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
